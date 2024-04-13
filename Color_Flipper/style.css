@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.heading{
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+ul li{
+    list-style: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px 3px #c63939;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+ul li:hover{
+    background-color: #c63939;
+    color: #ffffff;
+}
+ul li.active{
+    background-color: #c63939;
+    color: #ffffff;
+}
+
+main{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #808080;
+    background-color: #bbbbbb;
+}
+
+main .btnContainer{
+    display: flex;
+    gap: 20px;
+}
+main .btnContainer button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    background-color: blue;
+    color: #ffffff;
+    cursor: pointer;
+}
+main .btnContainer #changeColorBtn{
+    padding: 10px 20px;
+    background-color: #1506eb;
+}
+main .btnContainer #resetBtn{
+    padding: 10px 50px;
+    background-color: #5656fa;
+}
+main #colorDetails{
+    font-size: 40px;
+    margin-top: 30px;
+}
