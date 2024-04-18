@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3c3b3b;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 80vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3c3b3b;
+}
+main .heading{
+    font-size: 40px;
+    color: #590348;
+}
+main #value{
+    font-size: 40px;
+}
+main .btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+main #value{
+    font-size: 40px;
+    transition: all ease 0.2s;
+}
+.btnContainer button{
+    padding: 10px 20px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: #ffffff;
+}
+.btnContainer #increaseBtn{
+    background-color: #0a480a;
+}
+.btnContainer #resetBtn{
+    background-color: #fb4a05;
+}
+.btnContainer #decreaseBtn{
+    background-color: #0404c9;
+}
