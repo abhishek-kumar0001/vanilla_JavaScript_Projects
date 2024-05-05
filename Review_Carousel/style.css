@@ -12,9 +12,18 @@ body{
     height: 100vh;
     background-color: #040404;
 }
-.heading{
+main .heading h2{
     text-align: center;
-    color: #4e0250;
+    color: #040404;
+    font-size: 25px;
+}
+main .heading .underline{
+    height: 3px;
+    width: 50px;
+    background-color:#0680a5;
+    margin-left: 52%;
+    border-radius: 50px;
+    margin-top: 5px;
 }
 main{
     display: flex;
@@ -97,8 +106,13 @@ main .rightArrow{
     padding: 10px 20px;
     background-color: #0680a5;
     color: #ffffff;
-    border: none;
+    border: 2px solid #0680a5;
     border-radius: 25px;
     cursor: pointer;
     margin-top: 10px;
+    transition: all ease 0.5s;
+}
+.card button:hover{
+    color: #0680a5;
+    background-color: #ffffff;
 }
