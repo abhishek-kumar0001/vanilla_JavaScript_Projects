@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-color:#05855c;
+    --secondary-color:#fb6552;
+    --ternary-color:#d8d7d7;
+    --text-shadow: 0 0 5px black;
+
+}
+body{
+    background-color:ffffff;
+}
+nav{
+    background-color: var(--primary-color);
+    padding-inline: 100px;
+    padding-block: 10px;
+    box-shadow: 0 0 5px;
+    width: 100%;
+    color: var(--ternary-color);
+    text-shadow: var(--text-shadow);
+}
+nav .navCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.navCenter .navHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.navHeader .logo{
+    font-size: 30px;
+}
+.navHeader .logo span{
+    color: var(--secondary-color);
+}
+.navCenter .navLinks .links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.navLinks .links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform:uppercase;
+    transition: all ease 0.5s;
+    color: var(--ternary-color);
+}
+.navLinks .links li a:hover{
+    text-decoration: underline;
+    color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.navToggle{
+    display: none;
+    border: none;
+    background-color: var(--primary-color);
+}
+.navToggle .hamburger,.closeIcon{
+    color: var(--secondary-color);
+    font-size: 25px;
+    cursor: pointer;
+    text-shadow: var(--text-shadow);
+}
+
+/* Toggle */
+.links{
+    height: auto;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 940px) {
+    .navToggle{
+        display: block;
+    }
+    nav{
+        padding-inline:60px;
+    }
+    nav .navCenter{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .links{
+        height: 0; 
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;  
+    }
+    .navToggle .closeIcon{
+        display: none;
+    }
+   .showLinks{
+        height: auto;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    nav{
+        padding-inline:30px;
+    }
+}
+@media screen and (max-width: 450px){
+    nav{
+        padding-inline:20px;
+    }
+   
+}
+@media screen and (max-width: 350px){
+    nav{
+        padding-inline:10px;
+    }
+   
+}
+
+
