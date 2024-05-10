@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/bgImage.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2c0c25;
+    
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    position: fixed;
+    z-index: 5;
+}
+main .hero .banner{
+    background-color: #c7c4c4;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+
+}
+main .hero .showModalBtn{
+    background-color: green;
+    color: #ffffff;
+    border: 2px solid green;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+main .hero .showModalBtn:hover{
+    color: green;
+    background-color: transparent;
+    
+}
+main .modalOverlay{
+    position: fixed;
+    z-index: -8;
+    visibility: hidden;
+}
+/* open/close Modal */
+.modalOverlay.openModal{
+    visibility: visible;
+    z-index: 8;
+
+}
+main .modalOverlay .modalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    height: 200px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background-color: #ffffff;
+
+}
+main .modalOverlay .modalContainer .modalHeading{
+    font-size: 25px;
+}
+main .modalOverlay .modalContainer .closeBtn{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+
+}
+main .modalOverlay .modalContainer .closeBtn:hover{
+    background-color: red;
+    color: #ffffff;
+}
+main .modalOverlay .modalContainer .modalContent{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media  screen and (max-width:640px) {
+    main .modalOverlay .modalContainer{
+        width: 260px;
+    }
+    main .hero .banner{
+        width: 280px;
+    }
+    
+}
