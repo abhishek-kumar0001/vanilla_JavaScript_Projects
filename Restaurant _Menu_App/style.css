@@ -59,9 +59,10 @@ body{
 .menu .btnContainer .active, #all{
     background-color: var(--accent-color);
     color:#ffffff;
+    border-color: #000000;
 }
 
-.menu .btnContainer button:hover,.menu .btnContainer .active{
+.menu .btnContainer button:hover{
     background-color: var(--accent-color);
     color:#ffffff;
 }
@@ -110,8 +111,6 @@ body{
         width: 300px;
         height: 300px;   
         flex-direction: column;
-        overflow: hidden;
-
     }
     .menuItem .itemInfo p{
         text-align: center;
