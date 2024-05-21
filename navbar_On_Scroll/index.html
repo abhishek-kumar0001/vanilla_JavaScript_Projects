@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar On Scroll</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="navCenter">
+                <!-- nav header -->
+                <div class="navHeader">
+                    <img src="./assets/logo.png" alt="logo" class="logo">
+                    <!-- <h2 class="logo">Logo</h2> -->
+                    <button class="navToggle">
+                        <i class="fas fa-bars hambarger"></i>
+                        <i class="fa-solid fa-xmark closeBtn"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="linksContainer">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scrollLink">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scrollLink">about</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scrollLink">services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scrollLink">tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>scroll project</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt laudantium assumenda illum provident aut minus odit possimus temporibus! Praesentium?</p>
+                <a href="#tours" class="scrollLink btn btnWhite">explore tours</a>
+            </div>
+        </div>
+    </header>
+    <!-- about -->
+    <section id="about">
+        <div class="title">
+            <h2>about <span>us</span></h2>
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services">
+        <div class="title">
+            <h2>our <span>services</span></h2>
+        </div>
+    </section>
+    <!-- tours -->
+    <section id="tours">
+        <div class="title">
+            <h2>featured <span>tours</span></h2>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>
+            copyright &copy; backroads trave tours company
+            <span id="date"></span>
+            .all rights reserved
+        </p>
+    </footer>
+    <!-- back to top link -->
+    <a href="#home" class="scrollLink topLink">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
